@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[63],{126:function(e,n){throw new Error("Module parse failed: Unexpected token (1:7)\nYou may need an appropriate loader to handle this file type.\n> export interface Nep2 {\n|     encryptedKey: string;\n|     address: string;")}}]);
+//# sourceMappingURL=63.881443fc.chunk.js.map

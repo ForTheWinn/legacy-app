@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[33],{127:function(i,n,t){"use strict";t.r(n),t.d(n,"APP_LINKS",function(){return e});var e=[{label:"email",icon:"fas fa-envelope",link:"mailto:info@ftwcoin.io"},{label:"github",icon:"fab fa-github",link:"https://github.com/Forthewinn"},{label:"telegram",icon:"fab fa-telegram",link:"https://t.me/ftwcoin"},{label:"medium",icon:"fab fa-medium",link:"https://medium.com/ftw-blog"}]}}]);
+//# sourceMappingURL=33.4e577ca2.chunk.js.map

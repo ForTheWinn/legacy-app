@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[62],{125:function(e,n){throw new Error('Module parse failed: Unexpected token (2:7)\nYou may need an appropriate loader to handle this file type.\n| /// <reference types="react" />\n> export interface MenuRoute {\n|     path: string;\n|     label: string;')}}]);
+//# sourceMappingURL=62.c48c6163.chunk.js.map

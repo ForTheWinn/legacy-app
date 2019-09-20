@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[51],{345:function(e,r){throw new Error("Module parse failed: The keyword 'interface' is reserved (2:0)\nYou may need an appropriate loader to handle this file type.\n| /// <reference types=\"react\" />\n> interface VerifyPrivateKeyProps {\n|     onVerify: (privateKey: string) => void;\n| }")}}]);
+//# sourceMappingURL=51.5b6d6980.chunk.js.map
