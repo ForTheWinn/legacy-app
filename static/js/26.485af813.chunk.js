@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{53:function(e,t,n){"use strict";n.r(t);var a=n(0),s=n.n(a),l=n(38),u=n(15);t.default=function(){return s.a.createElement("div",{className:"columns is-multiline"},l.menuRoutes.map(function(e){return s.a.createElement("div",{key:e.path,className:"column is-4"},s.a.createElement(u.b,{className:"button is-fullwidth",to:e.path},e.label))}))}}}]);
+//# sourceMappingURL=26.485af813.chunk.js.map
