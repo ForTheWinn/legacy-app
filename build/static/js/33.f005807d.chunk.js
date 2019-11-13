@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[33],{270:function(e,o){throw new Error('Module parse failed: Unexpected token (2:7)\nYou may need an appropriate loader to handle this file type.\n| import { RouteProps } from "./types";\n> export declare const localWalletRoutes: RouteProps[];\n| export declare const filterRoutes: (hasSavedWallets: boolean) => RouteProps[];\n| //# sourceMappingURL=routes.d.ts.map')}}]);
-//# sourceMappingURL=33.f005807d.chunk.js.map
