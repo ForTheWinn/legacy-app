@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{267:function(e,o){throw new Error('Module parse failed: The keyword \'interface\' is reserved (4:0)\nYou may need an appropriate loader to handle this file type.\n| import { RouteComponentProps } from "react-router-dom";\n| import { RouteProps } from "../../types";\n> interface MenuProps extends RouteComponentProps {\n|     routes: RouteProps[];\n| }')}}]);
+//# sourceMappingURL=30.90d49a4c.chunk.js.map

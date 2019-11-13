@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[51],{111:function(e,n){throw new Error('Module parse failed: The keyword \'interface\' is reserved (5:0)\nYou may need an appropriate loader to handle this file type.\n| import { ConnectedWallet } from "../../types";\n| import { WalletsProps } from "../../index";\n> interface MatchParams {\n|     plugin: string;\n| }')}}]);
+//# sourceMappingURL=51.24ab754e.chunk.js.map
