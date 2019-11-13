@@ -13,7 +13,6 @@ const LotteryCard = ({ nlp2API }: LotteryCardProps) => {
   console.log("Render: LotteryCard");
   const { settings, currentJackpot, nextDrawingAt } = nlp2API.status;
   const { totalBalls, maxNumber } = settings;
-
   return (
     <>
       <div style={{ padding: "10px 0 10px 0" }}>
@@ -47,7 +46,3 @@ const LotteryCard = ({ nlp2API }: LotteryCardProps) => {
 };
 
 export default withStatus(LotteryCard);
-
-// export default (props: LotteryCardProps) => {
-//   return useMemo(() => <LotteryCard {...props} />, [props]);
-// };

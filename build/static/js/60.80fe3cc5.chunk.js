@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[60],{123:function(e,n){throw new Error('Module parse failed: Unexpected token (3:8)\nYou may need an appropriate loader to handle this file type.\n| /// <reference types="react" />\n| import { WalletsProps } from "../../index";\n> declare const LocalWallet: (props: WalletsProps) => JSX.Element;\n| export default LocalWallet;\n| //# sourceMappingURL=index.d.ts.map')}}]);
-//# sourceMappingURL=60.80fe3cc5.chunk.js.map

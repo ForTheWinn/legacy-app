@@ -13,7 +13,7 @@ const Header = ({ isSidebarActive, toggleSidebar }: HeaderProps) => {
     >
       <div className="navbar-brand">
         <a
-          href="javascript:void(0)"
+          href="#"
           style={{ marginLeft: 0 }}
           onClick={() => toggleSidebar(!isSidebarActive)}
           role="button"

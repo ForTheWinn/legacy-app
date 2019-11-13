@@ -18,7 +18,7 @@ const Menu = ({ toggleSidebar }: MenuProps) => {
                 <NavLink
                   exact={route.exact}
                   activeClassName="is-active"
-                  to={`${route.path}`}
+                  to={`${process.env.PUBLIC_URL}${route.path}`}
                   onClick={() => toggleSidebar(false)}
                 >
                   {route.name}

@@ -1,20 +1,24 @@
-import React, { ReactElement, Suspense } from "react";
+import React, { ReactElement, Suspense, useContext } from "react";
 import { Route } from "react-router";
 import { RouteProps, routes } from "./routes";
 import Nav from "../components/nav";
 import LotteryCard from "../components/card";
+import { InvokerContext } from "@neo-react/invoker";
 
 interface AppContentsProps {
   toggleSidebar: (status: boolean) => void;
 }
 
+const narrowColStyle = { width: "250px", paddingTop: 0 };
+
 const AppContents = (props: AppContentsProps) => {
+  const { state } = useContext(InvokerContext);
   return (
     <div className="section">
       <div className="container">
         <div className="columns is-multiline">
           <div
-            style={{ width: "250px", paddingTop: 0 }}
+            style={narrowColStyle}
             className="column is-narrow is-hidden-touch"
           >
             <div className="box">
@@ -38,7 +42,7 @@ const AppContents = (props: AppContentsProps) => {
                       );
                       return (
                         <Suspense fallback={<div />}>
-                          <SubComponent {...props} />
+                          <SubComponent wallet={state.wallet} {...props} />
                         </Suspense>
                       );
                     }}
@@ -49,7 +53,7 @@ const AppContents = (props: AppContentsProps) => {
           </div>
           <div
             className="column is-narrow is-hidden-touch"
-            style={{ width: "250px", paddingTop: 0 }}
+            style={narrowColStyle}
           >
             <div className="box">
               <Nav toggleSidebar={props.toggleSidebar} />

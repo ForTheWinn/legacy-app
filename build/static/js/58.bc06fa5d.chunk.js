@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[58],{121:function(e,n){throw new Error('Module parse failed: Unexpected token (3:7)\nYou may need an appropriate loader to handle this file type.\n| import { ReactNode } from "react";\n| import { ConnectedWallet, Nep2 } from "./types";\n> export interface WalletsProps {\n|     wallet?: ConnectedWallet;\n|     savedWallets?: Nep2[];')}}]);
-//# sourceMappingURL=58.bc06fa5d.chunk.js.map

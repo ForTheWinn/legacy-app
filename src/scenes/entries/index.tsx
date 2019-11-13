@@ -34,17 +34,6 @@ const Entries = (props: Props & RouteComponentProps) => {
               Winning tickets
             </NavLink>
           </li>
-          {/*<li*/}
-          {/*  className={*/}
-          {/*    props.location.pathname === "/entries/my-ticket"*/}
-          {/*      ? "is-active"*/}
-          {/*      : ""*/}
-          {/*  }*/}
-          {/*>*/}
-          {/*  <NavLink activeClassName="is-active" to={`/entries/my-ticket`}>*/}
-          {/*    My tickets*/}
-          {/*  </NavLink>*/}
-          {/*</li>*/}
         </ul>
       </div>
       <div>
@@ -58,13 +47,6 @@ const Entries = (props: Props & RouteComponentProps) => {
           path={`/entries/winnings`}
           component={() => <Winners {...props} />}
         />
-        {/*<Route*/}
-        {/*  exact={true}*/}
-        {/*  path={`${url}/winnings`}*/}
-        {/*  component={() => (*/}
-        {/*    <MyLotteryWinnings lotteryNo={lotteryNo} userAddress={address} />*/}
-        {/*  )}*/}
-        {/*/>*/}
       </div>
     </div>
   );

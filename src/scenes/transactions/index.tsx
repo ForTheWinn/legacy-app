@@ -4,7 +4,6 @@ import { InvokerContext } from "@neo-react/invoker";
 const Transactions = () => {
   const { state } = useContext(InvokerContext);
   const { pendingTxidList } = state;
-  console.log(state);
   return (
     <div className="box">
       <h1 className="title is-5">Transactions</h1>

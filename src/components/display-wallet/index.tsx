@@ -10,11 +10,11 @@ const DisplayWallet = () => {
       <>
         <div className="content is-small">
           <p style={{ wordBreak: "break-all" }}>
-            Wallet
+            <strong>Wallet</strong>
             <br />
             {provider}
             <br />
-            Address
+            <strong>Address</strong>
             <br />
             {address}
           </p>

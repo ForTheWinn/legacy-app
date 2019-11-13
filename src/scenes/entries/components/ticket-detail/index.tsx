@@ -6,7 +6,7 @@ import { InvokerContext } from "@neo-react/invoker";
 export interface Ticket {
   gameNo: number;
   ticketNo: number;
-  ticketCurrency: number;
+  ticketCurrency: string;
   player: string;
   numbers: [number];
   isVerified: boolean;
@@ -21,17 +21,6 @@ interface TicketDetailProps {
   data: Ticket;
   nlp2API: NLP2API;
 }
-
-const getTicketCurrency = (type: number) => {
-  switch (type) {
-    case 1:
-      return "FTX";
-    case 2:
-      return "CNEO";
-    case 3:
-      return "CGAS";
-  }
-};
 
 const TicketDetail = (props: TicketDetailProps) => {
   const { data, nlp2API } = props;
@@ -52,7 +41,6 @@ const TicketDetail = (props: TicketDetailProps) => {
 
   const { dispatch } = useContext(InvokerContext);
   const onClaim = (ticketNo: number): void => {
-    // @ts-ignore
     const invokeScript = NLP2API.getInvokeScript.claim([ticketNo]);
     dispatch.openInvoker({
       ...invokeScript,
@@ -79,31 +67,29 @@ const TicketDetail = (props: TicketDetailProps) => {
           ? "Playing"
           : "Verifying"}
       </p>
-      <h6>Claim</h6>
-      <p>
-        {matched > 1 ? (
-          isClaimed ? (
-            <>
-              <h6>Prize</h6>
-              <p>{`${prize} ${getTicketCurrency(ticketCurrency)}`}</p>
-            </>
-          ) : (
-            <>
-              {availableVerifications ? (
-                <button
-                  onClick={() => onClaim(ticketNo)}
-                  type="button"
-                  className="button is-success"
-                >
-                  Claim winning prize
-                </button>
-              ) : (
-                <p>Verifying other tickets (</p>
-              )}
-            </>
-          )
-        ) : null}
-      </p>
+      {matched > 1 ? (
+        isClaimed ? (
+          <>
+            <h6>Prize</h6>
+            <p>{`${prize} ${ticketCurrency}`}</p>
+          </>
+        ) : (
+          <>
+            <h6>Claim</h6>
+            {availableVerifications ? (
+              <button
+                onClick={() => onClaim(ticketNo)}
+                type="button"
+                className="button is-success"
+              >
+                Claim winning prize
+              </button>
+            ) : (
+              <p>Smart contract is verifying other tickets</p>
+            )}
+          </>
+        )
+      ) : null}
     </div>
   );
 };

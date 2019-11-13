@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[47],{325:function(e,n){throw new Error("Module parse failed: Unexpected token (1:7)\nYou may need an appropriate loader to handle this file type.\n> export interface LocalWalletProps {\n|     wallet?: ConnectedWallet;\n|     savedWallets?: Nep2[];")}}]);
+//# sourceMappingURL=47.b2ca87c1.chunk.js.map

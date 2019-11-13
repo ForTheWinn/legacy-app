@@ -2,12 +2,15 @@
   "name": "lottery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://www.ftxchange.com",
   "dependencies": {
     "@apollo/react-hooks": "^3.1.0",
     "@cityofzion/neon-js": "^4.7.0",
+    "@ftw-js/api": "^0.0.4",
+    "@ftw-js/fetch-paginate": "0.0.3",
+    "@ftw-js/lottery-number-picker": "0.0.3",
     "@neo-react/invoker": "^0.0.7",
     "@types/react-sidebar": "^3.0.0",
-    "antd": "^3.20.7",
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-client": "^2.6.4",
     "apollo-link-http": "^1.5.15",
@@ -22,12 +25,10 @@
     "react-dom": "^16.8.6",
     "react-icons": "^3.7.0",
     "react-komposer": "2",
-    "react-redux": "^7.1.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-sidebar": "^3.0.2",
-    "redux": "^4.0.4",
     "styled-components": "^4.3.2",
     "styled-system": "^5.0.18",
     "underscore": "^1.9.1"
@@ -35,6 +36,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prestart": "npm-link-shared /Users/ed/Projects/modules/dev/node_modules . react"
@@ -71,6 +73,7 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "gh-pages": "^2.1.1",
     "loadash": "^1.0.0",
     "prettier": "^1.18.2",
     "typescript": "^3.5.3"

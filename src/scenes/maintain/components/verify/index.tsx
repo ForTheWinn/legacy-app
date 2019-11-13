@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { InvokerContext } from "@neo-react/invoker";
-import {NLP2API} from "@ftw-js/api";
+import { NLP2API } from "@ftw-js/api";
 
 interface Props {
-  nlp2API: NLP2API
+  nlp2API: NLP2API;
 }
 
 const Verify = (props: Props) => {
@@ -22,6 +22,7 @@ const Verify = (props: Props) => {
       dispatch.openInvoker();
     }
   };
+  const totalAvailableTickets = status.indexes.currentTicketHeight - status.indexes.currentVerificationHeight;
 
   return (
     <div className="card" style={{ height: "100%" }}>
@@ -30,13 +31,16 @@ const Verify = (props: Props) => {
         style={{ justifyContent: "center", padding: 10 }}
       >
         <figure className="image is-128x128">
-          <img alt="verify" src={process.env.PUBLIC_URL + "/assets/verify.svg"} />
+          <img
+            alt="verify"
+            src={process.env.PUBLIC_URL + "/assets/verify.svg"}
+          />
         </figure>
       </div>
       <div className="card-content">
         <p className="title is-5">Verify tickets</p>
-        <p className="subtitle is-7">
-          Total {status.availableVerifications} tickets
+        <p className="subtitle is-6">
+          Total {totalAvailableTickets} tickets
         </p>
         <div className="content is-small">
           <ul>
@@ -46,7 +50,7 @@ const Verify = (props: Props) => {
           </ul>
         </div>
         <button
-          disabled={status.availableVerifications === 0}
+          disabled={totalAvailableTickets === 0}
           onClick={onVerify}
           className="button is-primary"
         >

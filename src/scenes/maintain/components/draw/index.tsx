@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import CountdownNow from "react-countdown-now";
 import { InvokerContext } from "@neo-react/invoker";
-import {NLP2API} from "@ftw-js/api";
+import { NLP2API } from "@ftw-js/api";
 import moment from "moment";
 
 interface Props {
@@ -35,7 +35,7 @@ const Draw = (props: Props) => {
       </div>
       <div className="card-content">
         <p className="title is-5">Draw lottery</p>
-        <p className="subtitle is-7">
+        <p className="subtitle is-6">
           Next drawing will be available at{" "}
           {moment(status.nextDrawingAt).format("MM-DD hh:mm:ss")}
         </p>
@@ -58,7 +58,7 @@ const Draw = (props: Props) => {
             } else {
               return (
                 <button disabled={true} className="button is-primary">
-                  {hours}:{minutes}:{seconds} time left
+                  Draw
                 </button>
               );
             }
